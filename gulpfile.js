@@ -51,3 +51,10 @@ gulp.task('default', ['del']);
 
 // scss compile task
 gulp.task('compile-sass', ['sass', 'minify-js']);
+
+function defaultTask(cb) {
+    // place code for your default task here
+    cb();
+  }
+  
+  exports.default = defaultTask
